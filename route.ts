@@ -9,7 +9,8 @@ import {
 
 const router = new Router();
 
-router.get("/api/v1/items", getItems)
+router
+  .get("/api/v1/items", getItems)
   .get("/api/v1/items/:id", getItem)
   .post("/api/v1/items", addItem)
   .put("/api/v1/items/:id", updateItem)
