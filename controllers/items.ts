@@ -1,5 +1,5 @@
 import { v4 } from "https://deno.land/std/uuid/mod.ts";
-import { Items } from "../format.ts";
+import { Items } from "../interface.ts";
 
 let items: Items[] = [
   {
