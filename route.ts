@@ -1,4 +1,4 @@
-import { Router } from "https://deno.land/x/oak/mod.ts";
+import { Router, RouterContext } from "https://deno.land/x/oak/mod.ts";
 import {
   getItems,
   getItem,
@@ -10,6 +10,9 @@ import {
 const router = new Router();
 
 router
+  .get("/", (ctx) => {
+    ctx.response.body = "Welcome to Deno API.";
+  })
   .get("/api/v1/items", getItems)
   .get("/api/v1/items/:id", getItem)
   .post("/api/v1/items", addItem)
