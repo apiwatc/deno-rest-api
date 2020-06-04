@@ -6,7 +6,7 @@
 
     deno run --allow-net server.ts
 
-| Methods  | Paths |
+| Methods  | Endpoints |
 | --- | --- |
 | GET  | /api/v1/items/  |
 | GET  | /api/v1/items/:id  |
